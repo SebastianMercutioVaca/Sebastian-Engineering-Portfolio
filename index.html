@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sebastian Vaca | Engineering Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>SV</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =================================================
+             HOME / HERO
+        ================================================== -->
+
+        <section id="home" class="hero">
+
+            <p class="intro">
+                Hello, I'm
+            </p>
+
+            <h1>
+                Sebastian Vaca
+            </h1>
+
+            <h2>
+                Computer Engineering Student
+            </h2>
+
+            <p class="hero-description">
+           
+                Building software, embedded systems, and digital hardware 
+                from code and firmware to the physical systems they control.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#projects"
+                    class="primary-btn"
+                >
+                    View My Projects
+                </a>
+
+                <a
+                    href="#contact"
+                    class="secondary-btn"
+                >
+                    Contact Me
+                </a>
+
+            </div>
+
+
+            <!-- THREE.JS HEAD -->
+
+            <div id="head-model"></div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section
+            id="projects"
+            class="projects-section"
+        >
+
+
+            <!-- PROJECT HEADER -->
+
+            <div class="projects-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        Selected Work
+                    </p>
+
+                    <h2>
+                        Projects
+                    </h2>
+
+                </div>
+
+
+                <div class="project-counter">
+
+                    <span id="current-project">
+                        01
+                    </span>
+
+                    <span class="counter-divider">
+                        /
+                    </span>
+
+                    <span id="total-projects">
+                        04
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROJECT CAROUSEL
+            ================================================== -->
+
+            <div class="project-carousel">
+
+
+                <!-- LEFT ARROW -->
+
+                <button
+                    class="carousel-arrow carousel-arrow-left"
+                    id="project-prev"
+                    aria-label="Previous project"
+                >
+                    &#8592;
+                </button>
+
+
+
+                <!-- =================================================
+                     CAROUSEL STAGE
+                ================================================== -->
+
+                <div class="carousel-stage">
+
+
+                    <!-- =================================================
+                         PROJECT 1
+                         MULTILINK SMART TRACKER
+                    ================================================== -->
+
+                    <article
+                        class="project-slide active"
+                        data-project="0"
+                    >
+
+
+                        <div class="project-video-wrapper">
+
+                            <video
+                                class="video-main"
+                                muted
+                                loop
+                                playsinline
+                                autoplay
+                                preload="metadata"
+                            >
+
+                                <source
+                                    src="./assets/videos/multilink-showcase.MP4"
+                                    type="video/mp4"
+                                >
+
+                            </video>
+
+                        </div>
+
+
+
+                        <div class="project-information">
+
+                            <p class="project-category">
+                                Circuitronics · Embedded Systems Internship
+                            </p>
+
+                            <h3>
+                                Multilink Smart Tracker
+                            </h3>
+
+                            <p class="project-description">
+
+                                Embedded hardware and firmware work involving
+                                BeagleBone Black and BeagleBone Black Industrial
+                                single-board computers integrated with the
+                                Multilink Smart Tracker platform.
+
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>BeagleBone</span>
+                                <span>Embedded Linux</span>
+                                <span>Firmware</span>
+                                <span>Hardware Integration</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PROJECT 2
+                         BEAGLEBONE
+                    ================================================== -->
+
+                    <article
+                        class="project-slide"
+                        data-project="1"
+                    >
+
+
+                        <div class="project-video-wrapper">
+
+                            <video
+                                class="video-main"
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                            >
+
+                                <source
+                                    src="./assets/videos/beaglebone-work.mov"
+                                >
+
+                            </video>
+
+                        </div>
+
+
+
+                        <div class="project-information">
+
+                            <p class="project-category">
+                                Circuitronics · Embedded Systems Internship
+                            </p>
+
+                            <h3>
+                                BeagleBone Hardware Integration
+                            </h3>
+
+                            <p class="project-description">
+
+                                Hands-on troubleshooting and integration of
+                                BeagleBone hardware with a carrier system,
+                                including firmware configuration and
+                                hardware-interface debugging.
+
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>Device Tree</span>
+                                <span>DTB / DTS</span>
+                                <span>Pinmux</span>
+                                <span>GPIO</span>
+                                <span>Linux</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PROJECT 3
+                         PCB MANUFACTURING
+                    ================================================== -->
+
+                    <article
+                        class="project-slide"
+                        data-project="2"
+                    >
+
+
+                        <div class="project-video-wrapper">
+
+                            <video
+                                class="video-main"
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                            >
+
+                                <source
+                                    src="./assets/videos/pcb-manufacturing.MOV"
+                                >
+
+                            </video>
+
+                        </div>
+
+
+
+                        <div class="project-information">
+
+                            <p class="project-category">
+                                Circuitronics · Internship
+                            </p>
+
+                            <h3>
+                                PCB Manufacturing Process
+                            </h3>
+
+                            <p class="project-description">
+
+                                Footage of automated PCB production equipment
+                                operating on a panelized circuit board during
+                                my internship at Circuitronics.
+
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>PCB Manufacturing</span>
+                                <span>Electronics</span>
+                                <span>Production</span>
+                                <span>Hardware</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =================================================
+                         PROJECT 4
+                         PROSTHETIC HAND
+                    ================================================== -->
+
+                    <article
+                        class="project-slide"
+                        data-project="3"
+                    >
+
+
+                        <div class="project-video-wrapper">
+
+                            <video
+                                class="video-main"
+                                muted
+                                loop
+                                playsinline
+                                preload="metadata"
+                            >
+
+                                <source
+                                    src="./assets/videos/prosthetic-hand.mov"
+                                >
+
+                            </video>
+
+                        </div>
+
+
+
+                        <div class="project-information">
+
+                            <p class="project-category">
+                                Embedded Systems · Personal Project
+                            </p>
+
+                            <h3>
+                                EEG-Controlled Prosthetic Hand
+                            </h3>
+
+                            <p class="project-description">
+
+                                Prosthetic-hand prototype integrating
+                                EEG input with a Raspberry Pi and servo
+                                control to translate signals into physical
+                                hand movement.
+
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>Raspberry Pi</span>
+                                <span>Python</span>
+                                <span>EEG</span>
+                                <span>NeuroSky</span>
+                                <span>Servo Control</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- RIGHT ARROW -->
+
+                <button
+                    class="carousel-arrow carousel-arrow-right"
+                    id="project-next"
+                    aria-label="Next project"
+                >
+                    &#8594;
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CAROUSEL INDICATORS
+            ================================================== -->
+
+            <div class="carousel-indicators">
+
+                <button
+                    class="project-dot active"
+                    data-index="0"
+                    aria-label="Project 1"
+                ></button>
+
+                <button
+                    class="project-dot"
+                    data-index="1"
+                    aria-label="Project 2"
+                ></button>
+
+                <button
+                    class="project-dot"
+                    data-index="2"
+                    aria-label="Project 3"
+                ></button>
+
+                <button
+                    class="project-dot"
+                    data-index="3"
+                    aria-label="Project 4"
+                ></button>
+
+            </div>
+
+
+        </section>
+
+                    </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section id="about" class="about-section">
+
+            <div class="about-topline">
+
+                <p class="section-label">
+                    About
+                </p>
+
+                <span class="about-number">
+                    02
+                </span>
+
+            </div>
+
+
+            <div class="about-divider"></div>
+
+
+            <div class="about-layout">
+
+                <div class="about-statement">
+
+                    <h2 class="about-title">
+                       <span>I BUILD SYSTEMS</span>
+                       <span>WHERE HARDWARE</span>
+                       <span>MEETS SOFTWARE.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-copy">
+
+                    <p>
+                        I'm a Computer Engineering student at the
+                        University of Central Florida with interests
+                        across software development, embedded systems,
+                        digital hardware, and hardware-software
+                        integration.
+                    </p>
+
+                    <p>
+                        I enjoy working across the full system from
+                        writing software and firmware to understanding,
+                        integrating, and debugging the hardware it
+                        runs on.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             CORE AREAS
+        ================================================== -->
+
+        <section class="core-section">
+
+            <div class="core-topline">
+
+                <p class="section-label">
+                    Core Areas
+                </p>
+
+                <span class="core-number">
+                    03
+                </span>
+
+            </div>
+
+
+            <div class="core-divider"></div>
+
+
+            <div class="core-list">
+
+
+                <!-- SOFTWARE DEVELOPMENT -->
+
+                <div class="core-item">
+
+                    <span class="core-index">
+                        01
+                    </span>
+
+                    <div class="core-content">
+
+                        <h3>
+                            Software Development
+                        </h3>
+
+                        <p>
+                            C · C++ · Python · Linux
+                        </p>
+
+                    </div>
+
+                   
+
+                </div>
+
+
+                <!-- EMBEDDED SYSTEMS -->
+
+                <div class="core-item">
+
+                    <span class="core-index">
+                        02
+                    </span>
+
+                    <div class="core-content">
+
+                        <h3>
+                            Embedded Systems
+                        </h3>
+
+                        <p>
+                            Firmware · Embedded Linux · Real-Time Systems
+                        </p>
+
+                    </div>
+
+                   
+
+                </div>
+
+
+                <!-- DIGITAL HARDWARE -->
+
+                <div class="core-item">
+
+                    <span class="core-index">
+                        03
+                    </span>
+
+                    <div class="core-content">
+
+                        <h3>
+                            Digital Hardware
+                        </h3>
+
+                        <p>
+                            FPGA · Verilog · Digital Logic · Circuit Debugging
+                        </p>
+
+                    </div>
+
+                    
+
+                </div>
+
+
+                <!-- HARDWARE-SOFTWARE INTEGRATION -->
+
+                <div class="core-item">
+
+                    <span class="core-index">
+                        04
+                    </span>
+
+                    <div class="core-content">
+
+                        <h3>
+                            Hardware-Software Integration
+                        </h3>
+
+                        <p>
+                            UART · CAN Bus · GPIO · Sensors & Control
+                        </p>
+
+                    </div>
+
+                    
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             TECHNICAL TOOLKIT
+        ================================================== -->
+
+        <section class="toolkit-section">
+
+            <div class="toolkit-topline">
+
+                <p class="section-label">
+                    Technical Toolkit
+                </p>
+
+                <span class="toolkit-number">
+                    04
+                </span>
+
+            </div>
+
+            <div class="toolkit-divider"></div>
+
+
+            <div class="toolkit-grid">
+
+                <!-- LANGUAGES -->
+
+                <div class="toolkit-group">
+
+                    <p class="toolkit-label">
+                        01 / Languages
+                    </p>
+
+                    <div class="toolkit-skills">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>ARM Assembly</span>
+                        <span>Verilog</span>
+                    </div>
+
+                </div>
+
+
+                <!-- DEVELOPMENT -->
+
+                <div class="toolkit-group">
+
+                    <p class="toolkit-label">
+                        02 / Development & Engineering
+                    </p>
+
+                    <div class="toolkit-skills">
+                        <span>Linux</span>
+                        <span>Git</span>
+                        <span>VS Code</span>
+                        <span>Vivado</span>
+                        <span>AutoCAD</span>
+                        <span>KiCAD</span>
+                    </div>
+
+                </div>
+
+
+                <!-- HARDWARE -->
+
+                <div class="toolkit-group">
+
+                    <p class="toolkit-label">
+                        03 / Hardware & Platforms
+                    </p>
+
+                    <div class="toolkit-skills">
+                        <span>BeagleBone</span>
+                        <span>STM32</span>
+                        <span>Raspberry Pi</span>
+                        <span>Basys-3 / Artix-7</span>
+                    </div>
+
+                </div>
+
+
+                <!-- DEBUGGING -->
+
+                <div class="toolkit-group">
+
+                    <p class="toolkit-label">
+                        04 / Debugging & Interfaces
+                    </p>
+
+                    <div class="toolkit-skills">
+                        <span>UART</span>
+                        <span>Serial</span>
+                        <span>CAN Bus</span>
+                        <span>GPIO</span>
+                        <span>SSH</span>
+                        <span>Oscilloscope</span>
+                        <span>Multimeter</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+       <!-- =================================================
+             EXPERIENCE
+        ================================================== -->
+
+        <section id="experience" class="experience-section">
+
+            <div class="experience-topline">
+
+                <p class="section-label">
+                    Experience
+                </p>
+
+                <span class="experience-number">
+                    05
+                </span>
+
+            </div>
+
+            <div class="experience-divider"></div>
+
+
+            <div class="experience-timeline">
+
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+
+
+                <!-- CIRCUITRONICS -->
+
+                <article class="experience-item">
+
+                    <div class="experience-marker"></div>
+
+                    <div class="experience-year">
+                        2026
+                    </div>
+
+                    <div class="experience-content">
+
+                        <p class="experience-role">
+                            Embedded Intern
+                        </p>
+
+                        <h2>
+                            Circuitronics LLC
+                        </h2>
+
+                        <div class="experience-tags">
+                            <span>Embedded Linux</span>
+                            <span>Firmware</span>
+                            <span>BeagleBone</span>
+                            <span>Device Tree</span>
+                            <span>GPIO</span>
+                            <span>UART</span>
+                        </div>
+
+                        <p class="experience-description">
+                            Worked across firmware, embedded Linux,
+                            and hardware integration for BeagleBone-based
+                            systems and automated electromechanical equipment.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RAYTHEON -->
+
+                <article class="experience-item">
+
+                    <div class="experience-marker"></div>
+
+                    <div class="experience-year">
+                        2023
+                    </div>
+
+                    <div class="experience-content">
+
+                        <p class="experience-role">
+                            Computer Engineering Intern
+                        </p>
+
+                        <h2>
+                            Raytheon Technologies
+                        </h2>
+
+                        <div class="experience-tags">
+                            <span>C++</span>
+                            <span>STM32</span>
+                            <span>Linux</span>
+                            <span>UAV Systems</span>
+                            <span>Telemetry</span>
+                            <span>HIL Testing</span>
+                        </div>
+
+                        <p class="experience-description">
+                            Worked with embedded flight-control systems,
+                            UAV simulation, telemetry analysis, and
+                            hardware-in-the-loop testing.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+                <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="contact-topline">
+
+                <p class="section-label">
+                    Contact
+                </p>
+
+                <span class="contact-number">
+                    06
+                </span>
+
+            </div>
+
+            <div class="contact-divider"></div>
+
+
+            <div class="contact-main">
+
+                <div class="contact-heading">
+
+                    <h2>
+                        <span>LET'S BUILD</span>
+                        <span>SOMETHING.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="contact-right">
+
+                    <p class="contact-message">
+                        Have a project, opportunity, or idea?
+                        Let's talk.
+                    </p>
+
+
+                    <div class="contact-links">
+
+                        <a
+                            href="mailto:sebastianmvaca26@gmail.com"
+                            class="contact-link"
+                        >
+                            <span>Email Me</span>
+                            <span class="contact-arrow">↗</span>
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/in/sebastian-vaca-9a685830b/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+                            <span>LinkedIn</span>
+                            <span class="contact-arrow">↗</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="portfolio-footer">
+
+                <div>
+                    <p>Sebastian Vaca</p>
+                    <span>Computer Engineering</span>
+                </div>
+
+                <div class="footer-right">
+                    <span>© 2026</span>
+                </div>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script
+        type="module"
+        src="script.js"
+    ></script>
+
+
+</body>
+
+</html>
